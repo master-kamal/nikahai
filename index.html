@@ -297,7 +297,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="m-5" style="100%">
+                <div class="m-5">
                     <a href="#" class="btn btn-primary text-center" width="70px">Lihat Tema Lainnya</a>
                 </div>
                 <hr>
@@ -306,26 +306,26 @@
         <!-- Diskon/Promo -->
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center">
-                <h4 class="display-5" style="color: black;font-weight: bold;">Spesial Promo Grand Opening 100%</h4>
-                <div class="countdown">
+                <h4 class="display-5" style="color: black;font-weight: bold;">Spesial Promo Grand Opening 25%</h4>
+                <div class="countdown display-5" style="color :rgb(255, 196, 47)">
                     <div class="time">
                         <span id="days">00</span>
-                        <span>days</span>
+                        <h6 class="card-title text-center" style="font-weight: bold; color:black">Hari</h6>
                     </div>
                     <div class="semicolon">:</div>
                     <div class="time">
                         <span id="hours">00</span>
-                        <span>hours</span>
+                        <h6 class="card-title text-center" style="font-weight: bold; color:black">Jam</h6>
                     </div>
                     <div class="semicolon">:</div>
                     <div class="time">
                         <span id="minutes">00</span>
-                        <span>minutes</span>
+                        <h6 class="card-title text-center" style="font-weight: bold; color:black">Menit</h6>
                     </div>
                     <div class="semicolon">:</div>
                     <div class="time">
                         <span id="seconds">00</span>
-                        <span>seconds</span>
+                        <h6 class="card-title text-center" style="font-weight: bold; color:black">Detik</h6>
                     </div>
                 </div>
                 <p class="lead" style="font-size: 16px;">Slot Terbatas
@@ -395,36 +395,37 @@
     <script src="assets/js/sb-admin-2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-        function getCounter() {
-            var countDownDate = new Date("Jan 11, 2023 22:00:00").getTime();
+        // Set the date we're counting down to
+        var countDownDate = new Date("Apr 26, 2023 15:37:25").getTime();
 
-            var x = setInterval(function () {
-                var now = new Date().getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function () {
 
-                var distance = countDownDate - now;
+            // Get today's date and time
+            var now = new Date().getTime();
 
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor(
-                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-                );
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
 
-                var textDays = document.getElementById("days");
-                var textHours = document.getElementById("hours");
-                var textMinutes = document.getElementById("minutes");
-                var textSeconds = document.getElementById("seconds");
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                textDays.innerHTML = days < 10 ? "0" + days : days;
-                textHours.innerHTML = hours < 10 ? "0" + hours : hours;
-                textMinutes.innerHTML = minutes < 10 ? "0" + minutes : minutes;
-                textSeconds.innerHTML = seconds < 10 ? "0" + seconds : seconds;
+            // Output the result in an element with id="demo"
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
 
-                if (distance < 0) {
-                    clearInterval(x);
-                }
-            }, 1000);
-        }
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
     </script>
 
 </body>
