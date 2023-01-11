@@ -23,3 +23,99 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+.countdown {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1024px) {
+    .countdown {
+        justify-content: center;
+    }
+}
+
+.countdown .time {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.countdown .time:not(:last-child) {
+    margin-right: 16px;
+}
+
+.countdown .time #days,
+.countdown .time #hours,
+.countdown .time #minutes,
+.countdown .time #seconds,
+.countdown .time .semicolon {
+    font-family: Samsung Sharp Sans;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .countdown .time #days,
+    .countdown .time #hours,
+    .countdown .time #minutes,
+    .countdown .time #seconds,
+    .countdown .time .semicolon {
+        font-size: 72px;
+        line-height: 91px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .countdown .time #days,
+    .countdown .time #hours,
+    .countdown .time #minutes,
+    .countdown .time #seconds,
+    .countdown .time .semicolon {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+.countdown .time span {
+    font-family: Samsung Sharp Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    align-self: center;
+}
+
+.countdown .semicolon {
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Samsung Sharp Sans;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .countdown .semicolon {
+        font-size: 72px;
+        line-height: 91px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .countdown .semicolon {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+    }
+}

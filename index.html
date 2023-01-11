@@ -307,7 +307,27 @@
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center">
                 <h4 class="display-5" style="color: black;font-weight: bold;">Spesial Promo Grand Opening 100%</h4>
-                <div id="timer"></div>
+                <div class="countdown">
+                    <div class="time">
+                        <span id="days">00</span>
+                        <span>days</span>
+                    </div>
+                    <div class="semicolon">:</div>
+                    <div class="time">
+                        <span id="hours">00</span>
+                        <span>hours</span>
+                    </div>
+                    <div class="semicolon">:</div>
+                    <div class="time">
+                        <span id="minutes">00</span>
+                        <span>minutes</span>
+                    </div>
+                    <div class="semicolon">:</div>
+                    <div class="time">
+                        <span id="seconds">00</span>
+                        <span>seconds</span>
+                    </div>
+                </div>
                 <p class="lead" style="font-size: 16px;">Slot Terbatas
                 </p>
             </div>
@@ -375,34 +395,36 @@
     <script src="assets/js/sb-admin-2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-        // Set a valid end date
-        var countDownDate = new Date("Jan 11, 2023 15:37:25").getTime();
+        function getCounter() {
+            var countDownDate = new Date("Aug 11, 2021 22:00:00").getTime();
 
-        // Update the count down every 1 second
-        var x = setInterval(function () {
+            var x = setInterval(function () {
+                var now = new Date().getTime();
 
-            // Get today's date and time
-            var now = new Date().getTime();
+                var distance = countDownDate - now;
 
-            // Find the distance between now and the countdown date
-            var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Calculate Remaining Time
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                var textDays = document.getElementById("days");
+                var textHours = document.getElementById("hours");
+                var textMinutes = document.getElementById("minutes");
+                var textSeconds = document.getElementById("seconds");
 
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
+                textDays.innerHTML = days < 10 ? "0" + days : days;
+                textHours.innerHTML = hours < 10 ? "0" + hours : hours;
+                textMinutes.innerHTML = minutes < 10 ? "0" + minutes : minutes;
+                textSeconds.innerHTML = seconds < 10 ? "0" + seconds : seconds;
 
-            // If the countdown is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("timer").innerHTML = "EXPIRED";
-            }
-        }, 1000);
+                if (distance < 0) {
+                    clearInterval(x);
+                }
+            }, 1000);
+        }
     </script>
 
 </body>
