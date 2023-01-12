@@ -127,3 +127,14 @@
         text-align: center;
     }
 }
+
+.floatwa {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 10%;
+    padding: 60px;
+    margin: auto;
+    text-align: center;
+    float: left;
+}
