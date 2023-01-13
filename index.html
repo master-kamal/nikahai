@@ -55,8 +55,8 @@
         <form class="form-inline pr-5">
             <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
             <a class="my-2 pl-2 my-sm-0 btnmenu aktif">Home </a>
-            <a class="my-2 pl-2 my-sm-0 btnmenu" href="">Katalog </a>
-            <a class="my-2 pl-2 my-sm-0 btnmenu" href="">Harga </a>
+            <a class="my-2 pl-2 my-sm-0 btnmenu" href="#catalog">Katalog </a>
+            <a class="my-2 pl-2 my-sm-0 btnmenu" href="#harga">Harga </a>
             <a class="my-2 pl-2 my-sm-0 btnmenu" href="">Kontak </a>
         </form>
     </nav>
@@ -67,10 +67,13 @@
                 terbatas jarak dan waktu, hanya dengan share via whatsapp, instagram, facebook, atau pun media sosial
                 lainnya.
             </p>
-            <button type="button" class="btn btn-danger" style="color:#fff;font-weight:bold;"><i
-                    class="fas fa-shopping-cart"></i> Order Sekarang</button>
-            <button type="button" class="btn btn-primary" style="color:#fff;font-weight:bold;"><i
-                    class="fas fa-search"></i> Lihat Katalog</button>
+            <a href="hal/form-wa.html" target="_blank">
+                <button type="button" class="btn btn-danger" style="color:#fff;font-weight:bold;"><i
+                        class="fas fa-shopping-cart"></i> Order Sekarang
+                </button>
+            </a>
+            <a href="#catalog" onclick="showcatalog();"><button type="button" class="btn btn-primary"
+                    style="color:#fff;font-weight:bold;"><i class="fas fa-search"></i> Lihat Katalog</button></a>
         </div>
     </div>
 
@@ -254,108 +257,112 @@
             </div>
         </div>
 
-
         <!-- Tema Undangan -->
-        <div class="row justify-content-center">
-            <div class="col-lg-10 text-center">
-                <h4 class="display-5" style="color: black;font-weight: bold;">Tema Undangan Website</h4>
-                <p class="lead" style="font-size: 16px;">Silahkan pilih tema undangan yang kamu sukai khusus kami
-                    buat untuk kamu, agar undangan terlihat cantik dan modern.
-                </p>
-                <div class="row justify-content-md-center">
-                    <div class="col-lg mt-2" style="padding: 0rem;">
-                        <div class="card">
-                            <img src="assets/img/tema01.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 01</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary center">Lihat Tema</a>
+        <div id="catalog">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h4 class="display-5" style="color: black;font-weight: bold;">Tema Undangan Website</h4>
+                    <p class="lead" style="font-size: 16px;">Silahkan pilih tema undangan yang kamu sukai khusus kami
+                        buat untuk kamu, agar undangan terlihat cantik dan modern.
+                    </p>
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg mt-2" style="padding: 0rem;">
+                            <div class="card">
+                                <img src="assets/img/tema01.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 01</h5>
+                                    <p class="card-text"></p>
+                                    <a href="#" class="btn btn-primary center">Lihat Tema</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg mt-2" style="padding: 0rem;">
-                        <div class="card">
-                            <img src="assets/img/tema02.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 02</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Lihat Tema</a>
+                        <div class="col-lg mt-2" style="padding: 0rem;">
+                            <div class="card">
+                                <img src="assets/img/tema02.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 02</h5>
+                                    <p class="card-text"></p>
+                                    <a href="#" class="btn btn-primary">Lihat Tema</a>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
-                    <div class="col-lg mt-2" style="padding: 0rem;">
-                        <div class="card">
-                            <img src="assets/img/tema03.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 03</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Lihat Tema</a>
-                            </div>
                         </div>
+                        <div class="col-lg mt-2" style="padding: 0rem;">
+                            <div class="card">
+                                <img src="assets/img/tema03.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 03</h5>
+                                    <p class="card-text"></p>
+                                    <a href="#" class="btn btn-primary">Lihat Tema</a>
+                                </div>
+                            </div>
 
-                    </div>
-                    <div class="col-lg mt-2" style="padding: 0rem;">
-                        <div class="card">
-                            <img src="assets/img/tema04.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 04</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Lihat Tema</a>
+                        </div>
+                        <div class="col-lg mt-2" style="padding: 0rem;">
+                            <div class="card">
+                                <img src="assets/img/tema04.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 04</h5>
+                                    <p class="card-text"></p>
+                                    <a href="#" class="btn btn-primary">Lihat Tema</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row" id="showcatalog" hidden>
+                        <div class="col-lg mt-2" style="padding: 0rem;">
+                            <div class="card">
+                                <img src="assets/img/tema01.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 01</h5>
+                                    <p class="card-text"></p>
+                                    <a href="#" class="btn btn-primary center">Lihat Tema</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg mt-2" style="padding: 0rem;">
+                            <div class="card">
+                                <img src="assets/img/tema02.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 02</h5>
+                                    <p class="card-text"></p>
+                                    <a href="#" class="btn btn-primary">Lihat Tema</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg mt-2" style="padding: 0rem;">
+                            <div class="card">
+                                <img src="assets/img/tema03.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 03</h5>
+                                    <p class="card-text"></p>
+                                    <a href="#" class="btn btn-primary">Lihat Tema</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg mt-2" style="padding: 0rem;">
+                            <div class="card">
+                                <img src="assets/img/tema04.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 04</h5>
+                                    <p class="card-text"></p>
+                                    <a href="#" class="btn btn-primary">Lihat Tema</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-5">
+                        <a onclick="showcatalog();" id="morecatalog" class="btn btn-primary text-center"
+                            width="70px">Lihat Tema
+                            Lainnya</a>
+                    </div>
+                    <hr>
                 </div>
-                <div class="row" id="showcatalog" hidden>
-                    <div class="col-lg mt-2" style="padding: 0rem;">
-                        <div class="card">
-                            <img src="assets/img/tema01.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 01</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary center">Lihat Tema</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg mt-2" style="padding: 0rem;">
-                        <div class="card">
-                            <img src="assets/img/tema02.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 02</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Lihat Tema</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg mt-2" style="padding: 0rem;">
-                        <div class="card">
-                            <img src="assets/img/tema03.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 03</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Lihat Tema</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg mt-2" style="padding: 0rem;">
-                        <div class="card">
-                            <img src="assets/img/tema04.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-weight: bold;">Nikahai 04</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Lihat Tema</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-5">
-                    <a onclick="showcatalog();" class="btn btn-primary text-center" width="70px">Lihat Tema Lainnya</a>
-                </div>
-                <hr>
             </div>
         </div>
+
         <!-- Diskon/Promo -->
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center">
@@ -385,171 +392,177 @@
                 <hr>
             </div>
         </div>
-        <!-- Paket Undangan -->
-        <div class="row justify-content-center">
-            <div class="col-lg-10 text-center">
-                <div class="row">
-                    <div class="col-lg mt-2">
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h3 class="card-title text-center" style="font-weight: bold;">Paket Silver</h3>
-                                <h3 class="card-title text-center text-warning" style="font-weight: bold;">Rp. 99.000
-                                </h3>
-                                <del>Harga Normal Rp. 129.000</del>
-                                <p class="card-text">Fitur Undangan</p>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Berupa link
-                                    unik (nikahai.com/namapasangan)</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Bebas pilih template</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Masa aktif 6 bulan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Unlimited costum nama tamu</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Penghitung waktu mundur</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> 1 Navigasi peta</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Google Kalender</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Cerita cinta/Qouetes</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Kolum ucapan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Album foto</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Bebas request musik</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Teks bisa disesuaikan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Protokol kesehatan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Revisi minor sampai fix</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-danger fas fa-times"></span> <del>Database googlesheet RSVP
-                                        (Konfirmasi Kehadiran) kolom ucapan</del></div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-danger fas fa-times"></span> <del>Bisa memasukan video</del></div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-danger fas fa-times"></span> <del>Bisa menambahkan link
-                                        ig/zoom/meet/youtube</del>
-                                </div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-danger fas fa-times"></span> <del>Menambahkan nomor rekening/ QR
-                                        Code E- Wallet untuk Wedding gift</del></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg mt-2">
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h3 class="card-title text-center" style="font-weight: bold;">Paket Gold</h3>
-                                <h3 class="card-title text-center text-warning" style="font-weight: bold;">Rp.
-                                    129.000
-                                </h3>
-                                <del>Harga Normal Rp. 150.000</del>
-                                <p class="card-text">Fitur Undangan</p>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Berupa link
-                                    unik (nikahai.com/namapasangan)</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Bebas pilih template</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Masa aktif 6 bulan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Unlimited costum nama tamu</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Penghitung waktu mundur</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> 1 Navigasi peta</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Google Kalender</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Cerita cinta/Qouetes</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Kolum ucapan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Album foto</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Bebas request musik</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Teks bisa disesuaikan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Protokol kesehatan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Revisi minor sampai fix</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fas fa-check"></span> Database googlesheet RSVP
-                                    (Konfirmasi Kehadiran) kolom ucapan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-danger fas fa-times"></span> <del>Bisa memasukan video</del></div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-danger fas fa-times"></span> <del>Bisa menambahkan link
-                                        ig/zoom/meet/youtube</del>
-                                </div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-danger fas fa-times"></span> <del>Menambahkan nomor rekening/ QR
-                                        Code E- Wallet untuk Wedding gift</del></div>
-                            </div>
-                        </div>
 
-                    </div>
-                    <div class="col-lg mt-2">
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h3 class="card-title text-center" style="font-weight: bold;">Paket Platinum</h3>
-                                <h3 class="card-title text-center text-warning" style="font-weight: bold;">Rp.
-                                    149.000
-                                </h3>
-                                <del>Harga Normal Rp. 200.00</del>
-                                <p class="card-text">Fitur Undangan</p>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Berupa link
-                                    unik (nikahai.com/namapasangan)</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Bebas pilih template</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Masa aktif 6 bulan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Unlimited costum nama tamu</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Penghitung waktu mundur</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> 1 Navigasi peta</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Google Kalender</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Cerita cinta/Qouetes</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Kolum ucapan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Album foto</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Bebas request musik</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Teks bisa disesuaikan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Protokol kesehatan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fa fa-check"></span> Revisi minor sampai fix</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fas fa-check"></span> Database googlesheet RSVP
-                                    (Konfirmasi Kehadiran) kolom ucapan</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fas fa-check"></span> Bisa memasukan video</div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fas fa-check"></span> Bisa menambahkan link
-                                    ig/zoom/meet/youtube
+        <!-- Paket Undangan -->
+        <div id="harga">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="row">
+                        <div class="col-lg mt-2">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center" style="font-weight: bold;">Paket Silver</h3>
+                                    <h3 class="card-title text-center text-warning" style="font-weight: bold;">Rp.
+                                        99.000
+                                    </h3>
+                                    <del>Harga Normal Rp. 129.000</del>
+                                    <p class="card-text">Fitur Undangan</p>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Berupa link
+                                        unik (nikahai.com/namapasangan)</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Bebas pilih template</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Masa aktif 6 bulan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Unlimited costum nama tamu</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Penghitung waktu mundur</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> 1 Navigasi peta</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Google Kalender</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Cerita cinta/Qouetes</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Kolum ucapan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Album foto</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Bebas request musik</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Teks bisa disesuaikan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Protokol kesehatan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Revisi minor sampai fix</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-danger fas fa-times"></span> <del>Database googlesheet RSVP
+                                            (Konfirmasi Kehadiran) kolom ucapan</del></div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-danger fas fa-times"></span> <del>Bisa memasukan video</del>
+                                    </div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-danger fas fa-times"></span> <del>Bisa menambahkan link
+                                            ig/zoom/meet/youtube</del>
+                                    </div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-danger fas fa-times"></span> <del>Menambahkan nomor rekening/ QR
+                                            Code E- Wallet untuk Wedding gift</del></div>
                                 </div>
-                                <div class="card-text text-left" style="font-size: 14px;"><span
-                                        class="text-info fas fa-check"></span> Menambahkan nomor rekening/ QR
-                                    Code E- Wallet untuk Wedding gift</div>
+                            </div>
+                        </div>
+                        <div class="col-lg mt-2">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center" style="font-weight: bold;">Paket Gold</h3>
+                                    <h3 class="card-title text-center text-warning" style="font-weight: bold;">Rp.
+                                        129.000
+                                    </h3>
+                                    <del>Harga Normal Rp. 150.000</del>
+                                    <p class="card-text">Fitur Undangan</p>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Berupa link
+                                        unik (nikahai.com/namapasangan)</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Bebas pilih template</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Masa aktif 6 bulan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Unlimited costum nama tamu</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Penghitung waktu mundur</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> 1 Navigasi peta</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Google Kalender</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Cerita cinta/Qouetes</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Kolum ucapan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Album foto</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Bebas request musik</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Teks bisa disesuaikan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Protokol kesehatan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Revisi minor sampai fix</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fas fa-check"></span> Database googlesheet RSVP
+                                        (Konfirmasi Kehadiran) kolom ucapan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-danger fas fa-times"></span> <del>Bisa memasukan video</del>
+                                    </div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-danger fas fa-times"></span> <del>Bisa menambahkan link
+                                            ig/zoom/meet/youtube</del>
+                                    </div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-danger fas fa-times"></span> <del>Menambahkan nomor rekening/ QR
+                                            Code E- Wallet untuk Wedding gift</del></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg mt-2">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center" style="font-weight: bold;">Paket Platinum</h3>
+                                    <h3 class="card-title text-center text-warning" style="font-weight: bold;">Rp.
+                                        149.000
+                                    </h3>
+                                    <del>Harga Normal Rp. 200.00</del>
+                                    <p class="card-text">Fitur Undangan</p>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Berupa link
+                                        unik (nikahai.com/namapasangan)</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Bebas pilih template</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Masa aktif 6 bulan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Unlimited costum nama tamu</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Penghitung waktu mundur</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> 1 Navigasi peta</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Google Kalender</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Cerita cinta/Qouetes</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Kolum ucapan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Album foto</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Bebas request musik</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Teks bisa disesuaikan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Protokol kesehatan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fa fa-check"></span> Revisi minor sampai fix</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fas fa-check"></span> Database googlesheet RSVP
+                                        (Konfirmasi Kehadiran) kolom ucapan</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fas fa-check"></span> Bisa memasukan video</div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fas fa-check"></span> Bisa menambahkan link
+                                        ig/zoom/meet/youtube
+                                    </div>
+                                    <div class="card-text text-left" style="font-size: 14px;"><span
+                                            class="text-info fas fa-check"></span> Menambahkan nomor rekening/ QR
+                                        Code E- Wallet untuk Wedding gift</div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <hr>
                 </div>
-                <hr>
             </div>
         </div>
     </div>
@@ -836,7 +849,18 @@
 
     <script>
         function showcatalog() {
+            const catalog = document.getElementById('morecatalog');
             document.getElementById('showcatalog').hidden = false;
+            catalog.innerHTML = "Sembunyikan Tema";
+            catalog.setAttribute("onClick", "javascript:hidecatalog();");
+
+        }
+        function hidecatalog() {
+            const catalog = document.getElementById('morecatalog');
+            document.getElementById('showcatalog').hidden = true;
+            catalog.innerHTML = "Tampilkan Tema Lainnya";
+            catalog.setAttribute("onClick", "javascript:showcatalog();");
+
         }
     </script>
 
