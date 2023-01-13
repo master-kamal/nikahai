@@ -54,10 +54,10 @@
             class="navbar-brand text-white"></a>
         <form class="form-inline pr-5">
             <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-            <a class="my-2 pl-2 my-sm-0 btnmenu aktif">Home </a>
-            <a class="my-2 pl-2 my-sm-0 btnmenu" href="#catalog">Katalog </a>
-            <a class="my-2 pl-2 my-sm-0 btnmenu" href="#harga">Harga </a>
-            <a class="my-2 pl-2 my-sm-0 btnmenu" href="">Kontak </a>
+            <a onclick="aktif(1);" id="home" class="my-2 pl-2 my-sm-0 btnmenu aktif">Home </a>
+            <a onclick="aktif(2);" id="katalog" class="my-2 pl-2 my-sm-0 btnmenu" href="#catalog">Katalog </a>
+            <a onclick="aktif(3);" id="harga" class="my-2 pl-2 my-sm-0 btnmenu" href="#detailharga">Harga </a>
+            <a onclick="aktif(4);" id="kontak" class="my-2 pl-2 my-sm-0 btnmenu" href="">Kontak </a>
         </form>
     </nav>
     <div class="jumbotron jumbotron-fluid">
@@ -394,7 +394,7 @@
         </div>
 
         <!-- Paket Undangan -->
-        <div id="harga">
+        <div id="detailharga">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <div class="row">
@@ -861,6 +861,37 @@
             catalog.innerHTML = "Tampilkan Tema Lainnya";
             catalog.setAttribute("onClick", "javascript:showcatalog();");
 
+        }
+    </script>
+
+    <script>
+        function aktif(x) {
+            const home = document.getElementById("home");
+            const katalog = document.getElementById("katalog");
+            const harga = document.getElementById("harga");
+            const kontak = document.getElementById("kontak");
+
+            if (x == 1) {
+                home.classList.add('aktif');
+                katalog.classList.remove('aktif');
+                harga.classList.remove('aktif');
+                kontak.classList.remove('aktif');
+            } else if (x == 2) {
+                home.classList.remove('aktif');
+                katalog.classList.add('aktif');
+                harga.classList.remove('aktif');
+                kontak.classList.remove('aktif');
+            } else if (x == 3) {
+                home.classList.remove('aktif');
+                katalog.classList.remove('aktif');
+                harga.classList.add('aktif');
+                kontak.classList.remove('aktif');
+            } else if (x == 4) {
+                home.classList.remove('aktif');
+                katalog.classList.remove('aktif');
+                harga.classList.remove('aktif');
+                kontak.classList.add('aktif');
+            }
         }
     </script>
 
